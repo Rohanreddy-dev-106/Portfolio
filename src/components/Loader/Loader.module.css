@@ -1,0 +1,30 @@
+.loaderContainer {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.terminal {
+  font-family: var(--ff-mono, 'Courier New', monospace);
+  font-size: clamp(24px, 5vw, 42px);
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  color: var(--accent); /* blue/cyan */
+}
+
+.cursor {
+  display: inline-block;
+  width: clamp(10px, 2vw, 15px);
+  height: clamp(28px, 6vw, 48px);
+  background-color: var(--accent);
+  margin-left: 8px;
+}
