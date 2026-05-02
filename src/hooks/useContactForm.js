@@ -41,9 +41,11 @@ export function useContactForm() {
     try {
       emailjs.init(PUBLIC_KEY)
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-        from_name: form.name,
+        name: form.name,
+        from_name: form.name + ' - ' + form.email,
         from_email: form.email,
         reply_to: form.email,
+        title: form.subject || 'Portfolio Contact',
         subject: form.subject || 'Portfolio Contact',
         message: form.message,
         to_email: PERSONAL.email,
