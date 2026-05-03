@@ -76,13 +76,6 @@ export default function Hero() {
               className='btn-ghost'>
               Download Resume
             </a>
-            <a
-              href={PERSONAL.github}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='btn-ghost'>
-              GitHub ↗
-            </a>
           </motion.div>
         </div>
 

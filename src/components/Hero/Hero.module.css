@@ -14,8 +14,14 @@
   inset: 0;
   background:
     radial-gradient(ellipse 80% 70% at 65% 40%, rgba(56, 189, 248, 0.07) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(14, 165, 233, 0.04) 0%, transparent 60%);
+  radial-gradient(ellipse 40% 40% at 20% 80%, rgba(14, 165, 233, 0.04) 0%, transparent 60%);
   pointer-events: none;
+}
+
+:global([data-theme='light']) .glow {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 50%, rgba(249, 115, 22, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(249, 115, 22, 0.07) 0%, transparent 60%);
 }
 
 /* Subtle grid */
@@ -30,6 +36,12 @@
   mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
 }
 
+:global([data-theme='light']) .gridLines {
+  background-image:
+    linear-gradient(rgba(249,115,22,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(249,115,22,0.06) 1px, transparent 1px);
+}
+
 .content {
   position: relative;
   z-index: 1;
@@ -41,7 +53,7 @@
 
 .textContent {
   flex: 1;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .imageContent {
@@ -111,7 +123,7 @@
   font-size: clamp(38px, 5vw, 60px);
   font-weight: bold;
   line-height: 1.2;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 16px;
 }
 .nameAccent { color: var(--accent); }
@@ -139,7 +151,7 @@
 .ctas {
   display: flex;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 44px;
 }
 
@@ -184,6 +196,7 @@
   }
   .ctas { 
     justify-content: center; 
+    flex-wrap: wrap;
   }
   .meta { 
     justify-content: center; 
