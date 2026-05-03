@@ -25,7 +25,7 @@ export const PERSONAL = {
 
 export const STATS = [
   { num: '4+',   label: 'Full-Stack Projects' },
-  { num: '3',    label: 'Certifications' },
+  { num: '3+',    label: 'Certifications' },
   { num: '2',    label: 'Hackathons' },
   { num: '7.43', label: 'B.Tech CGPA' },
 ]
