@@ -42,7 +42,7 @@ export default function About() {
                 <div>
                   <div className={styles.eduTitle}>B.Tech — Computer Science</div>
                   <div className={styles.eduSub}>
-                    {PERSONAL.college} &nbsp;·&nbsp; Expected 2026 &nbsp;·&nbsp; CGPA {PERSONAL.cgpa}
+                    {PERSONAL.college} &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; CGPA {PERSONAL.cgpa}
                   </div>
                 </div>
               </div>

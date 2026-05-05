@@ -16,7 +16,7 @@ export const PERSONAL = {
   summary:
     "Full-Stack MERN Developer with hands-on experience building scalable backend systems, secure REST APIs, and performance-optimized web applications. I enjoy turning complex problems into clean, maintainable code — and I'm currently expanding into AI Engineering.",
   about: [
-    "I'm a Computer Science undergraduate at St. Martin's Engineering College passionate about backend architecture and API design. My work focuses on building systems that are fast, secure, and production-ready.",
+    "I'm a Computer Science graduate at St. Martin's Engineering College passionate about backend architecture and API design. My work focuses on building systems that are fast, secure, and production-ready.",
     "I've shipped projects spanning anonymous social platforms, e-commerce backends, flight booking systems, and even a custom Git-like version control tool — all engineered for real-world performance.",
     "Beyond MERN, I actively participate in hackathons, building AI-powered prototypes under time pressure. I'm now deepening my expertise in Machine Learning, Deep Learning, and NLP to grow into AI Engineering.",
   ],
@@ -108,7 +108,7 @@ export const SKILLS = [
   {
     group: 'Database',
     icon: <FaDatabase />,
-    items: ['MongoDB', 'Mongoose', 'Transactions', 'Redis'],
+    items: ['MongoDB', 'Mongoose', 'Redis'],
   },
   {
     group: 'Frontend',
