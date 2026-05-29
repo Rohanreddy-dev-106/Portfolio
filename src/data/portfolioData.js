@@ -78,31 +78,20 @@ export const PROJECTS = [
     highlight: 'Zero overbooking',
   },
   {
-    title: "EduFlow CRM",
-    subtitle: "Role-based CRM for managing school sales pipelines",
-    description:
-      "EduFlow CRM is a full-stack CRM application built for EdTech sales teams to manage school prospects through a structured Kanban pipeline. It features role-based access control, onboarding checklists, real-time analytics, and secure authentication.",
-    highlights: [
-      "6-stage Kanban pipeline with drag-and-drop support",
-      "Role-based access control (Admin, Manager, Agent)",
-      "Automatic 10-step onboarding checklist per prospect",
-      "Real-time analytics with conversion rates and pipeline insights",
-      "Secure JWT authentication using HTTP-only cookies"
+    id: 4,
+    name: 'EduFlow CRM',
+    emoji: <FaLaptopCode />,
+    desc: 'Role-based CRM application built for EdTech sales teams to manage school prospects through a structured 6-stage Kanban pipeline with real-time analytics.',
+    bullets: [
+      '6-stage Kanban pipeline with drag-and-drop support',
+      'Role-based access control (Admin, Manager, Agent)',
+      'Automatic 10-step onboarding checklist per prospect',
+      'Real-time analytics and secure JWT authentication'
     ],
-    techStack: {
-      frontend: ["Next.js 14", "TypeScript", "Tailwind CSS"],
-      backend: ["Node.js", "Express", "Prisma ORM"],
-      database: ["MySQL", "MariaDB"],
-      auth: ["JWT", "bcrypt"]
-    },
-    features: [
-      "Prospect and notes management",
-      "Kanban board with overdue and due-today follow-up detection",
-      "Analytics dashboard with stage-wise breakdowns",
-      "Role-based authorization enforced at API and UI levels"
-    ],
-    category: "Full-Stack Application",
-    status: "Completed"
+    tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Prisma ORM', 'MySQL', 'JWT'],
+    github: 'https://github.com/Rohanreddy-dev-106',
+    live: '#',
+    highlight: '6-stage Kanban board'
   }
 ]
 export const SKILLS = [
