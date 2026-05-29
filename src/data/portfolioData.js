@@ -24,9 +24,9 @@ export const PERSONAL = {
 }
 
 export const STATS = [
-  { num: '4+',   label: 'Full-Stack Projects' },
-  { num: '3+',    label: 'Certifications' },
-  { num: '2',    label: 'Hackathons' },
+  { num: '4+', label: 'Full-Stack Projects' },
+  { num: '3+', label: 'Certifications' },
+  { num: '2', label: 'Hackathons' },
   { num: '7.43', label: 'B.Tech CGPA' },
 ]
 
@@ -78,22 +78,33 @@ export const PROJECTS = [
     highlight: 'Zero overbooking',
   },
   {
-    id: 4,
-    name: 'Mingit',
-    emoji: <FaCog />,
-    desc: 'Git-inspired custom version control system built from scratch — SHA-1 content-addressable storage, cryptographic commit graphs, and Myers diff algorithm.',
-    bullets: [
-      'SHA-1 hashing for content-addressable storage, reducing duplicate data by 90%',
-      'Cryptographic parent-hash commit graph enabling full history traversal',
-      'Myers diff algorithm with color-coded terminal output for developer readability',
+    title: "EduFlow CRM",
+    subtitle: "Role-based CRM for managing school sales pipelines",
+    description:
+      "EduFlow CRM is a full-stack CRM application built for EdTech sales teams to manage school prospects through a structured Kanban pipeline. It features role-based access control, onboarding checklists, real-time analytics, and secure authentication.",
+    highlights: [
+      "6-stage Kanban pipeline with drag-and-drop support",
+      "Role-based access control (Admin, Manager, Agent)",
+      "Automatic 10-step onboarding checklist per prospect",
+      "Real-time analytics with conversion rates and pipeline insights",
+      "Secure JWT authentication using HTTP-only cookies"
     ],
-    tags: ['Node.js', 'SHA-1', 'File System', 'Crypto', 'Diff Algorithm'],
-    github: 'https://github.com/Rohanreddy-dev-106',
-    live: null,
-    highlight: '90% deduplication',
-  },
+    techStack: {
+      frontend: ["Next.js 14", "TypeScript", "Tailwind CSS"],
+      backend: ["Node.js", "Express", "Prisma ORM"],
+      database: ["MySQL", "MariaDB"],
+      auth: ["JWT", "bcrypt"]
+    },
+    features: [
+      "Prospect and notes management",
+      "Kanban board with overdue and due-today follow-up detection",
+      "Analytics dashboard with stage-wise breakdowns",
+      "Role-based authorization enforced at API and UI levels"
+    ],
+    category: "Full-Stack Application",
+    status: "Completed"
+  }
 ]
-
 export const SKILLS = [
   {
     group: 'Languages',
@@ -108,12 +119,12 @@ export const SKILLS = [
   {
     group: 'Database',
     icon: <FaDatabase />,
-    items: ['MongoDB', 'Mongoose', 'Redis'],
+    items: ['MongoDB', 'Mongoose', 'Redis', 'MySQL'],
   },
   {
     group: 'Frontend',
     icon: <FaPalette />,
-    items: ['React', 'HTML5', 'CSS3', 'Bootstrap 5'],
+    items: ['React', 'HTML5', 'CSS3', 'Tailwind'],
   },
   {
     group: 'Tools & DevOps',
@@ -121,9 +132,9 @@ export const SKILLS = [
     items: ['Git', 'GitHub', 'Postman', 'Swagger UI', 'VS Code', 'Linux', 'Render'],
   },
   {
-    group: 'Learning 🤖',
-    icon: <FaBrain />,
-    items: ['Machine Learning', 'Deep Learning', 'NLP', 'AI Engineering', 'GenAI'],
+    group: 'Data Science Libraries 📊',
+    icon: <FaDatabase />,
+    items: ['NumPy', 'Pandas', 'Matplotlib'],
   },
 ]
 
@@ -169,9 +180,9 @@ export const ACHIEVEMENTS = [
 ]
 
 export const NAV_LINKS = [
-  { label: 'About',    href: '#about' },
+  { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Skills',   href: '#skills' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Credentials', href: '#certifications' },
-  { label: 'Contact',  href: '#contact' },
+  { label: 'Contact', href: '#contact' },
 ]
