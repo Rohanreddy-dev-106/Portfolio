@@ -71,8 +71,10 @@ export default function Hero() {
               Get in Touch
             </button>
             <a
-              href='/myCV.pdf'
+              href='myCV.pdf'
               download='rohanreddycv.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
               className='btn-ghost'>
               Download Resume
             </a>
@@ -83,7 +85,7 @@ export default function Hero() {
         <motion.div variants={itemVariants} className={styles.imageContent}>
           <div className={styles.imageWrapper}>
             <img
-              src='/image.png'
+              src='image.png'
               alt='Rohan Reddy'
               className={styles.profileImage}
             />
