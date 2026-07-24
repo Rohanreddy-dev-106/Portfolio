@@ -79,19 +79,18 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    name: 'EduFlow CRM',
-    emoji: <FaLaptopCode />,
-    desc: 'Role-based CRM application built for EdTech sales teams to manage school prospects through a structured 6-stage Kanban pipeline with real-time analytics.',
+    name: 'PulpFibrilNet',
+    emoji: <FaBrain />,
+    desc: 'CNN & Image Processing System for Pulp Fibril Detection, combining a fine-tuned ResNet-50 CNN with adaptive image processing to detect and quantify fibrils.',
     bullets: [
-      '6-stage Kanban pipeline with drag-and-drop support',
-      'Role-based access control (Admin, Manager, Agent)',
-      'Automatic 10-step onboarding checklist per prospect',
-      'Real-time analytics and secure JWT authentication'
+      'Designed a hybrid deep learning pipeline combining a fine-tuned ResNet-50 CNN with adaptive image processing (Bradley’s local thresholding, morphological operations) to detect and quantify fibrils in microscopic pulp fiber images, replacing manual inspection.',
+      'Integrated a YOLOv4-based post-processing stage to suppress false positives, achieving an average deviation of 0.449% against manual measurements across varying lighting, noise, and contrast conditions.',
+      'Built an end-to-end analysis workflow covering preprocessing, model training/evaluation, and prediction visualization, delivering a scalable automated alternative to industrial fibrillation-index measurement.'
     ],
-    tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Prisma ORM', 'MySQL', 'JWT'],
-    github: 'https://github.com/Rohanreddy-dev-106',
+    tags: ['Python', 'TensorFlow', 'ResNet-50', 'YOLOv4', 'OpenCV'],
+    github: 'https://github.com/Rohanreddy-dev-106/PulpFibrilNet-',
     live: '#',
-    highlight: '6-stage Kanban board'
+    highlight: '0.449% avg deviation'
   }
 ]
 export const SKILLS = [

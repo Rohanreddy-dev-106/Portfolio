@@ -71,7 +71,7 @@ export default function Hero() {
               Get in Touch
             </button>
             <a
-              href='./mycv.pdf'
+              href='./myCV.pdf'
               download='mycv.pdf'
               className='btn-ghost'>
               Download Resume
