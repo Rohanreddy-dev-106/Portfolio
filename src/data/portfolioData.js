@@ -69,6 +69,8 @@ export const PROJECTS = [
     desc: 'Real-time flight booking backend with atomic seat availability tracking that prevents overbooking entirely through transactional guarantees.',
     bullets: [
       'Multi-filter flight search reducing avg API response time by 35%',
+      'Optimized database queries using MongoDB indexing and aggregation pipelines to handle complex flight search filtering efficiently.',
+      'Developed a cron-based automated worker to release unconfirmed or expired bookings after 15 minutes, dynamically freeing up seat inventory.',
       'MVC + Repository pattern with centralized error handling for maintainability',
       'OTP email verification via Nodemailer, increasing successful verifications by 50%',
     ],
